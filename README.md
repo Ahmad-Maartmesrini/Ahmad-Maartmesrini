@@ -2,5 +2,5 @@
 - 👀 I’m interested in Web Development
 - 🌱 I’m currently learning React
 - 💞️ I’m looking to collaborate on Projects
-- 📫 How to reach me just google ahmad.mrtm
+- 📫 How to reach me, just google Ahmad.mrtm
 - ⚡ Fun fact: I haven't driven a car yet!
