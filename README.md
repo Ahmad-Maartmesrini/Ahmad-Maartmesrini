@@ -1,6 +1,6 @@
 - 👋 Hi, I’m @Ahmad-Maartmesrini
 - 👀 I’m interested in Web Development
-- 🌱 I’m currently learning React
+- 🌱 I’m currently looking to gain experience in a real-world project 
 - 💞️ I’m looking to collaborate on Projects
-- 📫 How to reach me, just google Ahmad.mrtm
-- ⚡ Fun fact: I haven't driven a Car yet!
+- 📫 How to reach me, Ahmad-Maartmesrini@outlook.com
+- ⚡ Fun fact: I like Swimming 
