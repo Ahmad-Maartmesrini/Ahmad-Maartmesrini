@@ -1,6 +1,13 @@
 const Hero = () => {
   return (
-    <div>Hero</div>
+    <div className="pt-10">
+      <div>
+      <p>ddddddfdfdfd</p>
+      </div>
+      <div>
+        <img src="" alt="Ahmad Maartmesrini" />
+      </div>
+    </div>
   )
 }
 
