@@ -9,4 +9,26 @@
 
 body {
   font-family: "Lato", "sans-serif";
+  background-color: #EBE0F5;
+  color: #000;
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 100vh;
 }
+
+.padding-section {
+  padding: 5rem;
+}
+
+@media (max-width: 850px) {
+  .padding-section {
+    padding: 4rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .padding-section {
+    padding: 2rem;
+  }
+}
+
