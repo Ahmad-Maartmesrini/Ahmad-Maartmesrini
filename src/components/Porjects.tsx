@@ -13,7 +13,7 @@ const Button: React.FC<ButtonProps> = ({ href, label }) => (
   <div className="relative overflow-hidden cursor-pointer">
     <a href={href} target="_blank" aria-label={label}>
       <button className="relative z-10 py-2 px-6 bg-[#560ea2] rounded-xl text-[#fff] font-bold border border-transparent transition-colors hover:bg-transparent hover:text-[#000]">
-       {label}
+        {label}
       </button>
     </a>
   </div>
@@ -38,11 +38,17 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 }) => (
   <div className="p-5 bg-[#fff] text-[#000] rounded-3xl flex flex-col justify-start items-center gap-5">
     <a href={websiteLink} target="_blank" rel="noopener noreferrer">
-      <img src={imageUrl} alt={name} className="rounded-xl mb-3 w-full h-full" />
+      <img
+        src={imageUrl}
+        alt={name}
+        className="rounded-xl mb-3 w-full h-full"
+      />
     </a>
     <div className="w-5/6">
       <h2 className="text-2xl font-bold font-alegreya">{name}</h2>
-      <p className="font-normal text-[14px] sm:text-[16px] md:text-[20px]">{description}</p>
+      <p className="font-normal text-[14px] sm:text-[16px] md:text-[20px]">
+        {description}
+      </p>
       <div className="mt-4">
         <p className="">Tech Stack:</p>
         <ul className="list-none flex gap-2 flex-wrap text-[14px] font-normal">
@@ -80,12 +86,7 @@ const Projects: React.FC = () => {
       name: "Portfolio",
       description:
         "Overwhelmed by long articles?  Sumz cuts through the clutter. This open-source web app summarizes lengthy articles and translates them into 10 languages, saving you time and offering global perspectives on your reading.",
-      techStack: [
-        "TypeScript",
-        "React",
-        "Aceternity UI",
-        "TailWind CSS",
-      ],
+      techStack: ["TypeScript", "React", "Aceternity UI", "TailWind CSS"],
       githubLink: "https://github.com/Ahmad-Maartmesrini/Mohamad-Shahbandar",
       websiteLink: "https://mohamadshahbandar.vercel.app",
       imageUrl: Portfolio,
@@ -94,12 +95,7 @@ const Projects: React.FC = () => {
       name: "Portfolio",
       description:
         "Overwhelmed by long articles?  Sumz cuts through the clutter. This open-source web app summarizes lengthy articles and translates them into 10 languages, saving you time and offering global perspectives on your reading.",
-      techStack: [
-        "TypeScript",
-        "React",
-        "Aceternity UI",
-        "TailWind CSS",
-      ],
+      techStack: ["TypeScript", "React", "Aceternity UI", "TailWind CSS"],
       githubLink: "https://github.com/Ahmad-Maartmesrini/GPT4-SAAS",
       websiteLink: "https://gpt4saas.vercel.app",
       imageUrl: Gpt4SaaS,
@@ -108,31 +104,36 @@ const Projects: React.FC = () => {
       name: "Portfolio",
       description:
         "Overwhelmed by long articles?  Sumz cuts through the clutter. This open-source web app summarizes lengthy articles and translates them into 10 languages, saving you time and offering global perspectives on your reading.",
-      techStack: [
-        "TypeScript",
-        "React",
-        "Aceternity UI",
-        "TailWind CSS",
-      ],
+      techStack: ["TypeScript", "React", "Aceternity UI", "TailWind CSS"],
       githubLink: "https://github.com/Ahmad-Maartmesrini/Todo-List",
       websiteLink: "https://web-to-do-list-omega.vercel.app",
       imageUrl: toDoList,
     },
   ];
 
+  const year = () => new Date().getFullYear();
+
   return (
-    <div id="portfolio" className="padding-section min-h-screen">
-      <div className="pb-10">
-        <h1 className="font-alegreya font-bold text-3xl sm:text-5xl md:text-7xl text-center text-[#560ea2]">
-          Projects
-        </h1>
+    <>
+      <div
+        id="portfolio"
+        className="padding-section min-h-screen flex flex-col justify-center items-center"
+      >
+        <div className="pb-10">
+          <h1 className="font-alegreya font-bold text-3xl sm:text-5xl md:text-7xl text-center text-[#560ea2]">
+            Projects
+          </h1>
+        </div>
+        <div className="flex flex-col justify-center items-center gap-10 font-bold">
+          {projects.map((project, index) => (
+            <ProjectCard key={index} {...project} />
+          ))}
+        </div>
       </div>
-      <div className="flex flex-col justify-center items-center gap-10 font-bold">
-        {projects.map((project, index) => (
-          <ProjectCard key={index} {...project} />
-        ))}
-      </div>
-    </div>
+      <small className=" flex justify-center text-xs mb-5">
+        &#9400; {year()} AHMAD MAARTMESRINI • All RIGHT RESERVED
+      </small>
+    </>
   );
 };
 

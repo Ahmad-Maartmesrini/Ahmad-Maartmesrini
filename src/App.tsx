@@ -1,12 +1,11 @@
 import "./App.css";
-import { Hero, Projects, Footer } from "./components";
+import { Hero, Projects } from "./components";
 
 function App() {
   return (
     <div>
       <Hero />
       <Projects />
-      <Footer />
     </div>
   );
 }
