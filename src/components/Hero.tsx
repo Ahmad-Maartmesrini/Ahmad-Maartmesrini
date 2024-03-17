@@ -1,13 +1,13 @@
 import CVicon from "../assets/CV.png";
 import X from "../assets/x.png";
 import github from "../assets/github.png";
-import CV from "../assets/amcv.pdf";
+import CV from "../assets/Ahmad Maartmesrini's CV.pdf";
 
 
 const Hero = () => {
   return (
     <div className="font-alegreya padding-section flex flex-col justify-center items-center">
-      <div className=" py-10 flex flex-col justify-start items-center rounded-t-3xl text-black w-full bg-gradient-to-b from-[#EDF6FD]">
+      <div className="p-5 sm:p-10 md:px-16 flex flex-col justify-start items-center rounded-t-3xl text-black  max-w-[1450px] bg-gradient-to-b from-[#EDF6FD]">
         <h1 className="font-bold text-3xl sm:text-5xl md:text-7xl mb-5 text-[#560ea2]">
           Ahmad Maartmesrini
         </h1>

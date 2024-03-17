@@ -36,7 +36,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   websiteLink,
   imageUrl,
 }) => (
-  <div className="p-5 bg-[#fff] text-[#000] rounded-3xl flex flex-col justify-start items-center gap-5">
+  <div className="p-5 bg-[#EDF6FD] text-[#000] rounded-3xl flex flex-col justify-start items-center gap-5">
     <a href={websiteLink} target="_blank" rel="noopener noreferrer">
       <img
         src={imageUrl}
@@ -44,14 +44,14 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         className="rounded-xl mb-3 w-full h-full"
       />
     </a>
-    <div className="w-5/6">
+    <div className="w-11/12">
       <h2 className="text-2xl font-bold font-alegreya">{name}</h2>
-      <p className="font-normal text-[14px] sm:text-[16px] md:text-[20px]">
+      <p className="pl-3 font-normal text-[14px] sm:text-[16px] md:text-[20px]">
         {description}
       </p>
       <div className="mt-4">
         <p className="">Tech Stack:</p>
-        <ul className="list-none flex gap-2 flex-wrap text-[14px] font-normal">
+        <ul className="pl-3 list-none flex gap-2 flex-wrap text-[14px] font-normal">
           {techStack.map((tech) => (
             <li key={tech}>{tech}</li>
           ))}
@@ -69,8 +69,7 @@ const Projects: React.FC = () => {
   const projects = [
     {
       name: "Sumz",
-      description:
-        "Overwhelmed by long articles?  Sumz cuts through the clutter. This open-source web app summarizes lengthy articles and translates them into 10 languages, saving you time and offering global perspectives on your reading.",
+      description: "Sumz cuts through lengthy articles, providing concise summaries with the click of a button. Save summaries for future reference and translate them into multiple languages. Developed to streamline reading, Sumz enhances productivity and saves time. During development, I strengthened my skills in state management and Redux store setup.",
       techStack: [
         "JavaScript",
         "React",
@@ -84,27 +83,25 @@ const Projects: React.FC = () => {
     },
     {
       name: "Portfolio",
-      description:
-        "Overwhelmed by long articles?  Sumz cuts through the clutter. This open-source web app summarizes lengthy articles and translates them into 10 languages, saving you time and offering global perspectives on your reading.",
+      description: "Step into Mohamad's Portfolio: A Gallery of Masterpieces. Crafted with precision and sophistication, showcasing high-end designs. Its modern, sleek design effortlessly converts visitors into clients, offering an immersive experience. Leveraging the latest UI library, every element highlights Mohamad's creativity, while embracing innovative design trends to engage users at every turn.",
       techStack: ["TypeScript", "React", "Aceternity UI", "TailWind CSS"],
       githubLink: "https://github.com/Ahmad-Maartmesrini/Mohamad-Shahbandar",
       websiteLink: "https://mohamadshahbandar.vercel.app",
       imageUrl: Portfolio,
     },
     {
-      name: "Portfolio",
+      name: "GPT4SaaS",
       description:
-        "Overwhelmed by long articles?  Sumz cuts through the clutter. This open-source web app summarizes lengthy articles and translates them into 10 languages, saving you time and offering global perspectives on your reading.",
-      techStack: ["TypeScript", "React", "Aceternity UI", "TailWind CSS"],
+      "The primary goal of this project was to transform modern UI/UX designs into functional websites, regardless of complexity. Although it's currently an early request landing page for an AI Startup, the project underscores a dedication to mastering frontend development, with a particular focus on pure CSS3. It delivers a sleek and functional interface for users to submit their requests.",
+      techStack: ["JavaScript","React", "CSS3"],
       githubLink: "https://github.com/Ahmad-Maartmesrini/GPT4-SAAS",
       websiteLink: "https://gpt4saas.vercel.app",
       imageUrl: Gpt4SaaS,
     },
     {
-      name: "Portfolio",
-      description:
-        "Overwhelmed by long articles?  Sumz cuts through the clutter. This open-source web app summarizes lengthy articles and translates them into 10 languages, saving you time and offering global perspectives on your reading.",
-      techStack: ["TypeScript", "React", "Aceternity UI", "TailWind CSS"],
+      name: "Web to-do list",
+      description: "Boost your productivity with this user-friendly, open-source to-do list application.  It prioritizes simplicity with a clean design to streamline your task management.  Interactive sounds provide rewarding feedback, keeping you engaged as you check off tasks.  Convenient local storage ensures your to-do list is always accessible, even without an internet connection.  Take control of your day-to-day activities with this efficient and customizable tool.",
+      techStack: ["TypeScript", "React", "TailWind CSS"],
       githubLink: "https://github.com/Ahmad-Maartmesrini/Todo-List",
       websiteLink: "https://web-to-do-list-omega.vercel.app",
       imageUrl: toDoList,
