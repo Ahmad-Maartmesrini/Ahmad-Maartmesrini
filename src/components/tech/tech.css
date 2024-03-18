@@ -1,5 +1,5 @@
 .logos {
-  @apply flex justify-center items-center flex-wrap py-10;
+  @apply flex justify-center items-center flex-wrap py-10 px-[4vh];
 }
 
 .logos img {
