@@ -1,10 +1,11 @@
 import "./App.css";
-import { Hero, Projects } from "./components";
+import { Hero, Tech, Projects } from "./components";
 
 function App() {
   return (
     <div>
       <Hero />
+      <Tech />
       <Projects />
     </div>
   );

@@ -1,0 +1,7 @@
+.logos {
+  @apply overflow-hidden p-10 flex justify-center items-center flex-wrap;
+}
+
+.logos img {
+  @apply h-6 sm:h-10 md:h-16 m-3;
+}

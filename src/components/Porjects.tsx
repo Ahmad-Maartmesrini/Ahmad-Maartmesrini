@@ -1,8 +1,5 @@
 import React from "react";
-import AISummarizer from "../assets/AI Summarizer-min.png";
-import Portfolio from "../assets/Portfolio.png";
-import Gpt4SaaS from "../assets/GPT4SaaS.png";
-import toDoList from "../assets/toDoList.png";
+import { GPT4SaaS, Sumz, Portfolio, toDoList } from "../assets/projects/index"
 
 interface ButtonProps {
   href: string;
@@ -80,7 +77,7 @@ const Projects: React.FC = () => {
       ],
       githubLink: "https://github.com/Ahmad-Maartmesrini/ai_summraizer",
       websiteLink: "https://ai-summraizer.vercel.app",
-      imageUrl: AISummarizer,
+      imageUrl: Sumz,
     },
     {
       name: "Portfolio",
@@ -98,7 +95,7 @@ const Projects: React.FC = () => {
       techStack: ["JavaScript", "React", "CSS3"],
       githubLink: "https://github.com/Ahmad-Maartmesrini/GPT4-SAAS",
       websiteLink: "https://gpt4saas.vercel.app",
-      imageUrl: Gpt4SaaS,
+      imageUrl: GPT4SaaS,
     },
     {
       name: "Web to-do list",

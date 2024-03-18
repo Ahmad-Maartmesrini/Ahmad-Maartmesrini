@@ -1,12 +1,10 @@
-import CVicon from "../assets/CV.png";
-import X from "../assets/x.png";
-import github from "../assets/github.png";
+import {CVicon, X, github} from "../assets/logos/index"
 import CV from "../assets/Ahmad Maartmesrini's CV.pdf";
 
 const Hero = () => {
   return (
     <div className="font-alegreya padding-section flex flex-col justify-center items-center">
-      <div className="p-5 sm:p-10 md:px-16 flex flex-col justify-start items-center text-black rounded-t-3xl bg-gradient-to-b from-[#EDF6FD]">
+      <div className="p-5 sm:p-10 md:px-16 flex flex-col justify-center items-center rounded-t-3xl bg-gradient-to-b from-[#EDF6FD]">
         <h1 className="font-bold text-3xl sm:text-5xl md:text-7xl mb-5 text-[#560ea2]">
           Ahmad Maartmesrini
         </h1>
@@ -14,7 +12,7 @@ const Hero = () => {
           Crafting Elegant Frontend Experiences is My Mission
         </h1>
       </div>
-      <div className="flex gap-5 mt-[12vh]">
+      <div className="flex gap-5 mt-[10vh]">
         <a href="https://twitter.com/Ahmad_mrtm" className="w-8">
           <img src={X} alt="X" />
         </a>
