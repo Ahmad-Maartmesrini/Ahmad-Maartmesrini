@@ -9,7 +9,7 @@
 
 body {
   font-family: "Lato", "sans-serif";
-  background-color: #EBE0F5;
+  background-color: #ebe0f5;
   color: #000;
   box-sizing: border-box;
   width: 100%;
@@ -17,18 +17,17 @@ body {
 }
 
 .padding-section {
-  padding: 5rem;
+  padding: 16vh;
 }
 
 @media (max-width: 850px) {
   .padding-section {
-    padding: 4rem;
+    padding: 8vh;
   }
 }
 
 @media (max-width: 450px) {
   .padding-section {
-    padding: 2rem;
+    padding: 4vh;
   }
 }
-

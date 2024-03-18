@@ -69,7 +69,8 @@ const Projects: React.FC = () => {
   const projects = [
     {
       name: "Sumz",
-      description: "Sumz cuts through lengthy articles, providing concise summaries with the click of a button. Save summaries for future reference and translate them into multiple languages. Developed to streamline reading, Sumz enhances productivity and saves time. During development, I strengthened my skills in state management and Redux store setup.",
+      description:
+        "Sumz cuts through lengthy articles, providing concise summaries with the click of a button. Save summaries for future reference and translate them into multiple languages. Developed to streamline reading, Sumz enhances productivity and saves time. During development, I strengthened my skills in state management and Redux store setup.",
       techStack: [
         "JavaScript",
         "React",
@@ -83,7 +84,8 @@ const Projects: React.FC = () => {
     },
     {
       name: "Portfolio",
-      description: "Step into Mohamad's Portfolio: A Gallery of Masterpieces. Crafted with precision and sophistication, showcasing high-end designs. Its modern, sleek design effortlessly converts visitors into clients, offering an immersive experience. Leveraging the latest UI library, every element highlights Mohamad's creativity, while embracing innovative design trends to engage users at every turn.",
+      description:
+        "Step into Mohamad's Portfolio: A Gallery of Masterpieces. Crafted with precision and sophistication, showcasing high-end designs. Its modern, sleek design effortlessly converts visitors into clients, offering an immersive experience. Leveraging the latest UI library, every element highlights Mohamad's creativity, while embracing innovative design trends to engage users at every turn.",
       techStack: ["TypeScript", "React", "Aceternity UI", "TailWind CSS"],
       githubLink: "https://github.com/Ahmad-Maartmesrini/Mohamad-Shahbandar",
       websiteLink: "https://mohamadshahbandar.vercel.app",
@@ -92,15 +94,16 @@ const Projects: React.FC = () => {
     {
       name: "GPT4SaaS",
       description:
-      "The primary goal of this project was to transform modern UI/UX designs into functional websites, regardless of complexity. Although it's currently an early request landing page for an AI Startup, the project underscores a dedication to mastering frontend development, with a particular focus on pure CSS3. It delivers a sleek and functional interface for users to submit their requests.",
-      techStack: ["JavaScript","React", "CSS3"],
+        "The primary goal of this project was to transform modern UI/UX designs into functional websites, regardless of complexity. Although it's currently an early request landing page for an AI Startup, the project underscores a dedication to mastering frontend development, with a particular focus on pure CSS3. It delivers a sleek and functional interface for users to submit their requests.",
+      techStack: ["JavaScript", "React", "CSS3"],
       githubLink: "https://github.com/Ahmad-Maartmesrini/GPT4-SAAS",
       websiteLink: "https://gpt4saas.vercel.app",
       imageUrl: Gpt4SaaS,
     },
     {
       name: "Web to-do list",
-      description: "Boost your productivity with this user-friendly, open-source to-do list application.  It prioritizes simplicity with a clean design to streamline your task management.  Interactive sounds provide rewarding feedback, keeping you engaged as you check off tasks.  Convenient local storage ensures your to-do list is always accessible, even without an internet connection.  Take control of your day-to-day activities with this efficient and customizable tool.",
+      description:
+        "Boost your productivity with this user-friendly, open-source to-do list application.  It prioritizes simplicity with a clean design to streamline your task management.  Interactive sounds provide rewarding feedback, keeping you engaged as you check off tasks.  Convenient local storage ensures your to-do list is always accessible, even without an internet connection.  Take control of your day-to-day activities with this efficient and customizable tool.",
       techStack: ["TypeScript", "React", "TailWind CSS"],
       githubLink: "https://github.com/Ahmad-Maartmesrini/Todo-List",
       websiteLink: "https://web-to-do-list-omega.vercel.app",
@@ -113,21 +116,23 @@ const Projects: React.FC = () => {
   return (
     <>
       <div
-        id="portfolio"
-        className="padding-section min-h-screen flex flex-col justify-center items-center"
+        id="projects"
+        className="padding-section pb-0 min-h-screen flex flex-col justify-center items-center"
       >
-        <div className="pb-10">
-          <h1 className="font-alegreya font-bold text-3xl sm:text-5xl md:text-7xl text-center text-[#560ea2]">
-            Projects
-          </h1>
-        </div>
-        <div className="flex flex-col justify-center items-center gap-10 font-bold">
-          {projects.map((project, index) => (
-            <ProjectCard key={index} {...project} />
-          ))}
+        <div className="max-w-[1200px]">
+          <div className="pb-10">
+            <h1 className="font-alegreya font-bold text-3xl sm:text-5xl md:text-7xl text-center text-[#560ea2]">
+              Projects
+            </h1>
+          </div>
+          <div className="flex flex-col justify-center items-center gap-10 font-bold">
+            {projects.map((project, index) => (
+              <ProjectCard key={index} {...project} />
+            ))}
+          </div>
         </div>
       </div>
-      <small className=" flex justify-center text-xs mb-5">
+      <small className=" flex justify-center text-xs mb-4">
         &#9400; {year()} AHMAD MAARTMESRINI • All RIGHT RESERVED
       </small>
     </>
