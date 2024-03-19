@@ -1,4 +1,4 @@
-import {CVicon, X, github} from "../assets/logos/index"
+import { CVicon, X, github } from "../assets/logos/index";
 import CV from "../assets/Ahmad Maartmesrini's CV.pdf";
 
 const Hero = () => {
@@ -19,7 +19,10 @@ const Hero = () => {
         <a href="https://github.com/Ahmad-Maartmesrini" className="w-8">
           <img src={github} alt="github" />
         </a>
-        <a href={CV} download="Ahmad Maartmesrini's CV">
+        <a
+          href="https://flowcv.com/resume/cmdc2mruwj"
+          target="_blank"
+        >
           <img src={CVicon} alt="CV" className="w-8" />
         </a>
       </div>
