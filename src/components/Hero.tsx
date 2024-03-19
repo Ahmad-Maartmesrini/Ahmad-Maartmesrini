@@ -1,5 +1,4 @@
 import { CVicon, X, github } from "../assets/logos/index";
-import CV from "../assets/Ahmad Maartmesrini's CV.pdf";
 
 const Hero = () => {
   return (
