@@ -1,6 +1,6 @@
 .logos {
-  @apply flex justify-center items-center flex-wrap py-10 px-[4vh];
-}
+  @apply flex justify-center items-center flex-wrap my-[5vh] p-[4vh] max-w-[1100px];
+  }
 
 .logos img {
   @apply h-10 sm:h-12 md:h-16 m-3;

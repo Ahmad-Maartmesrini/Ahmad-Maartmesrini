@@ -118,7 +118,7 @@ const Projects: React.FC = () => {
       >
         <div className="max-w-[1200px]">
           <div className="pb-10">
-            <h1 className="font-alegreya font-bold text-3xl sm:text-5xl md:text-7xl text-center text-[#560ea2]">
+            <h1 className="font-alegreya font-bold text-3xl sm:text-5xl md:text-8xl text-center text-[#7e14d6]">
               Projects
             </h1>
           </div>

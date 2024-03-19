@@ -17,12 +17,12 @@ body {
 }
 
 .padding-section {
-  padding: 16vh;
+  padding: 8vh;
 }
 
 @media (max-width: 850px) {
   .padding-section {
-    padding: 8vh;
+    padding: 6vh;
   }
 }
 
