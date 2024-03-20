@@ -12,17 +12,18 @@ const Hero = () => {
         </h1>
       </div>
       <div className="flex gap-5">
-        <a href="https://twitter.com/Ahmad_mrtm" className="w-8">
+        <a href="https://twitter.com/Ahmad_mrtm" target="_blank" className="w-8">
           <img src={X} alt="X" />
         </a>
-        <a href="https://github.com/Ahmad-Maartmesrini" className="w-8">
+        <a href="https://github.com/Ahmad-Maartmesrini" target="_blank" className="w-8">
           <img src={github} alt="github" />
         </a>
         <a
           href="https://flowcv.com/resume/cmdc2mruwj"
           target="_blank"
+          className="w-8"
         >
-          <img src={CVicon} alt="CV" className="w-8" />
+          <img src={CVicon} alt="CV" />
         </a>
       </div>
     </div>
