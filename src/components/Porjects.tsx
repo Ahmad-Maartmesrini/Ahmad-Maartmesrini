@@ -1,5 +1,5 @@
 import React from "react";
-import { GPT4SaaS, Sumz, Portfolio, toDoList } from "../assets/projects/index"
+import { GPT4SaaS, Sumz, Portfolio, toDoList, Tenzies } from "../assets/projects/index";
 
 interface ButtonProps {
   href: string;
@@ -87,6 +87,15 @@ const Projects: React.FC = () => {
       githubLink: "https://github.com/Ahmad-Maartmesrini/Mohamad-Shahbandar",
       websiteLink: "https://mohamadshahbandar.vercel.app",
       imageUrl: Portfolio,
+    },
+    {
+      name: "Tenzies",
+      description:
+        "Tenzies is a fast-paced dice game perfect for quick rounds, blending chance with strategic decisions. Through development, mastery of props and state management in React was achieved, ensuring seamless data flow and dynamic UI updates.",
+      techStack: ["JavaScript", "React", "TailWind CSS"],
+      githubLink: "https://github.com/Ahmad-Maartmesrini/Tenzies",
+      websiteLink: "https://tenzies-sage-eta.vercel.app",
+      imageUrl: Tenzies,
     },
     {
       name: "GPT4SaaS",
