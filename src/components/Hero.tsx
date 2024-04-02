@@ -1,4 +1,4 @@
-import { CVicon, X, github } from "../assets/logos/index";
+import { X, github } from "../assets/logos/index";
 
 const Hero = () => {
   return (
