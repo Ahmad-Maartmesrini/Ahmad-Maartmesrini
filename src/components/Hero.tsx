@@ -2,13 +2,13 @@ import { CVicon, X, github } from "../assets/logos/index";
 
 const Hero = () => {
   return (
-    <div className="font-alegreya padding-section flex flex-col justify-center items-center sm:min-h-screen">
+    <div className="font-alegreya padding-section flex flex-col justify-center items-center ">
       <div className="p-5 sm:p-10 md:px-16 flex flex-col justify-center items-center rounded-t-3xl bg-gradient-to-b from-[#EDF6FD]">
-        <h1 className="font-bold text-3xl sm:text-5xl md:text-8xl text-[#7e14d6]">
+        <h1 className="font-bold text-3xl sm:text-5xl md:text-8xl text-center text-[#7e14d6]">
           Ahmad Maartmesrini
         </h1>
         <h1 className="text-xl text-center sm:text-2xl md:text-3xl mt-[3vh] font-[400]">
-          Crafting Elegant Frontend Experiences is My Mission
+        I'm Passionately Dedicated To Crafting Elegant Frontend Interfaces.
         </h1>
       </div>
       <div className="flex gap-5">
@@ -18,13 +18,13 @@ const Hero = () => {
         <a href="https://github.com/Ahmad-Maartmesrini" target="_blank" className="w-8">
           <img src={github} alt="github" />
         </a>
-        <a
+        {/* <a
           href="https://flowcv.com/resume/cmdc2mruwj"
           target="_blank"
           className="w-8"
         >
           <img src={CVicon} alt="CV" />
-        </a>
+        </a> */}
       </div>
     </div>
   );
