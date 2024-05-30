@@ -1,5 +1,11 @@
 import React from "react";
-import { GPT4SaaS, Sumz, Portfolio, toDoList, Tenzies } from "../assets/projects/index";
+import {
+  GPT4SaaS,
+  Sumz,
+  Portfolio,
+  toDoList,
+  Tenzies,
+} from "../assets/projects/index";
 
 interface ButtonProps {
   href: string;
@@ -7,9 +13,9 @@ interface ButtonProps {
 }
 
 const Button: React.FC<ButtonProps> = ({ href, label }) => (
-  <div className="relative overflow-hidden cursor-pointer">
-    <a href={href} target="_blank" aria-label={label}>
-      <button className="relative z-10 py-2 px-6 bg-[#560ea2] rounded-xl text-[#fff] font-bold border border-transparent transition-colors hover:bg-transparent hover:text-[#000]">
+  <div className="overflow-hidden cursor-pointer">
+    <a href={href} aria-label={label}>
+      <button className="py-2 px-6 bg-[#560ea2] rounded text-[#fff] text-sm font-normal border border-transparent transition-all hover:border-black hover:bg-transparent hover:text-[#000]">
         {label}
       </button>
     </a>
@@ -33,22 +39,20 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   websiteLink,
   imageUrl,
 }) => (
-  <div className="p-5 bg-[#EDF6FD] text-[#000] rounded-3xl flex flex-col justify-start items-center gap-5">
-    <a href={websiteLink} target="_blank" rel="noopener noreferrer">
+  <div className="p-3 lg:p-5 bg-[#EDF6FD] text-[#000] rounded-lg flex flex-col justify-start items-center gap-2.5 lg:gap-5">
+    <a href={websiteLink}>
       <img
         src={imageUrl}
         alt={name}
-        className="rounded-xl mb-3 w-full h-full"
+        className="rounded mb-3 object-fit w-full h-full"
       />
     </a>
     <div className="w-11/12">
-      <h2 className="text-2xl font-bold font-alegreya">{name}</h2>
-      <p className="pl-3 font-normal text-[14px] sm:text-[16px] md:text-[20px]">
-        {description}
-      </p>
+      <h2 className="text-xl md:text-2xl font-bold font-alegreya">{name}</h2>
+      <p className="font-normal text-sm sm:text-base">{description}</p>
       <div className="mt-4">
-        <p className="">Tech Stack:</p>
-        <ul className="pl-3 list-none flex gap-2 flex-wrap text-[14px] font-normal">
+        {/* <p>Tech Stack:</p> */}
+        <ul className="list-none flex gap-2 flex-wrap text-sm font-normal">
           {techStack.map((tech) => (
             <li key={tech}>{tech}</li>
           ))}
@@ -130,15 +134,25 @@ const Projects: React.FC = () => {
             <h1 className="font-alegreya font-bold text-3xl sm:text-5xl md:text-8xl text-center text-[#7e14d6]">
               Projects
             </h1>
+            <p className="text-sm md:text-base xl:text-lg mt-6 text-center lg:mx-16">
+              I'm working remotely at a B2B company that deals with
+              international clients. Within my team, I focus on developing
+              sophisticated front-end interfaces to ensure optimal user
+              experiences. Currently, we're using Svelte to build a national
+              e-commerce platform.
+            </p>
           </div>
-          <div className="flex flex-col justify-center items-center gap-10 font-bold">
+          <p className="text-center text-sm my-2">
+            Here are some projects I built while learning.
+          </p>
+          <div className="flex flex-col justify-center items-center gap-6 lg:gap-10 font-bold">
             {projects.map((project, index) => (
               <ProjectCard key={index} {...project} />
             ))}
           </div>
         </div>
       </div>
-      <small className=" flex justify-center text-xs mb-4">
+      <small className="flex justify-center text-[8px] lg:text-xs mb-4 font-normal">
         &#9400; {year()} AHMAD MAARTMESRINI • All RIGHT RESERVED
       </small>
     </>
