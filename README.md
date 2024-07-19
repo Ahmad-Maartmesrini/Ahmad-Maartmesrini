@@ -6,4 +6,4 @@
 
 📫 For inquiries or correspondence, please reach me at Ahmad-Maartmesrini@outlook.com.
 
-⚡ Fun fact: I am passionate about reading and aspire to become a public speaker.
+⚡ Fun fact: I'm a Car guy.
