@@ -16,6 +16,7 @@ import {
   sass,
   reactQuery,
   svelteQuery,
+  ai,
 } from "../../assets/logos/index";
 
 const techArray = [
@@ -50,6 +51,7 @@ const techArray = [
   { img: bootstrap, alt: "Bootstrap", href: "https://getbootstrap.com" },
   { img: api, alt: "Rest API", href: "https://www.ibm.com/topics/rest-apis" },
   { img: svelteKit, alt: "Svelte & Svelte Kit", href: "https://svelte.dev" },
+  { img: ai, alt: "AI Prompting", href: "https://openai.com" },
   {
     img: css,
     alt: "CSS3",
@@ -67,7 +69,7 @@ const Tech = () => {
               src={tech.img}
               alt={tech.alt}
               title={tech.alt}
-              loading="lazy"
+              loading="eager"
             />
           </a>
         ))}
