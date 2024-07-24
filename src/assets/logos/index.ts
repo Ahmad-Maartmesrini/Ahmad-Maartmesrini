@@ -14,6 +14,11 @@ import git from "./Git-logo.png";
 import svelteKit from "./SvelteKit.png";
 import gitlab from "./gitlab.png";
 import api from "./api.webp";
+import bootstrap from './Bootstrap.svg'
+import nextjs from './Nextjs.png'
+import sass from './Sass.png'
+import reactQuery from './react query.png'
+import svelteQuery from './Svelte query.png'
 
 export {
   CVicon,
@@ -31,5 +36,6 @@ export {
   git,
   svelteKit,
   gitlab,
-  api
+  api,
+  bootstrap, nextjs, sass, reactQuery, svelteQuery
 };

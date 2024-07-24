@@ -1,4 +1,4 @@
-import { X, github } from "../assets/logos/index";
+import { X, github, CVicon } from "../assets/logos/index";
 
 const Hero = () => {
   return (
@@ -27,13 +27,13 @@ const Hero = () => {
         >
           <img src={github} alt="github" />
         </a>
-        {/* <a
+        <a
           href="https://flowcv.com/resume/cmdc2mruwj"
           target="_blank"
           className="w-8"
         >
           <img src={CVicon} alt="CV" />
-        </a> */}
+        </a>
       </div>
     </div>
   );
