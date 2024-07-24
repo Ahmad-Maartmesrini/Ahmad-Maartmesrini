@@ -1,9 +1,19 @@
-👋 Greetings, I am Ahmad Maartmesrini.
+# 👋 Greetings, I am Ahmad Maartmesrini
 
-👀 My professional pursuits center around software engineering, with a particular emphasis on web development.
+### 👀 About Me
+I am a passionate software engineer with a strong focus on web development. My expertise spans a variety of technologies, and I am always eager to learn and adapt to new challenges.
 
-🌱 At present, I am actively seeking avenues to enhance my skill set through engagement in real-world projects.
+### 🌱 Currently
+I am actively enhancing my skills through real-world projects. Currently, I am focusing on:
+- **Next.js Ecosystem**: Shipping high-quality web applications using the power of React components and the extensive tools within the Next.js ecosystem.
+- **E-commerce Development**: Building a national E-commerce platform with an international team in a B2B company.
 
-📫 For inquiries or correspondence, please reach me at Ahmad-Maartmesrini@outlook.com.
+### 📫 Get in Touch
+For inquiries or correspondence, please reach me at: [Ahmad-Maartmesrini@outlook.com](mailto:Ahmad-Maartmesrini@outlook.com)
 
-⚡ Fun fact: I am passionate about reading and aspire to become a public speaker.
+You can also find me on:
+- [Personal Website](https://ahmad-maartmesrini.vercel.app)
+- [X (formerly Twitter)](https://x.com/Ahmad_mrtm)
+
+### ⚡ Fun Fact
+I'm a Car guy. I love everything about cars, from their design to their engineering, and I enjoy learning about the latest advancements in automotive technology.
